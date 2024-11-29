@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .parent div {
+            height: 600px;
+            width: 600px;
+            background-image: url(https://www.wildnatureimages.com/images/960/130726-063-Denali-National-Park.webp);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        @media (max-width:1028px) {
+            .parent div {
+                height: 300px;
+                width: 300px;
+            }
+        }
+        @media (max-width:543px) {
+            .parent div {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="HOME"></div>
+        <div class="HOME"></div>
+        <div class="HOME"></div>
+        <div class="HOME"></div>
+        <div class="HOME"></div>
+        <div class="HOME"></div>
+    </div>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia velit illum, veniam voluptatibus minima autem commodi excepturi assumenda, rem odit delectus perspiciatis cupiditate obcaecati aperiam in ipsa reprehenderit dolorem. Dolor?</p>
+
+
+</html>

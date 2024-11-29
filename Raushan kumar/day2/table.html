@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        font-size: 30;
+    }
+  table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  table{
+    text-align: center;
+  }
+tr:nth-child(1){
+    background-color: yellow;
+}
+tr:nth-child(3){
+    background-color: aqua;
+}
+
+  
+
+  
+</style>
+<body>
+    
+    <form action="">
+        <label for="">usearname</label>
+        <input type="text"><br>
+
+        <!-- radio buttons -->
+         <label for="">Gender</label><br>
+         <input name="Gender" type="radio"> Male
+         <input name ="Gender" type="radio"> Female
+         <input name="Gender"type="radio">choose not to disclose
+    </form>
+
+
+    <select name="" id="">
+        <label for="">choose your hobbies</label>
+        <br>
+        <input type="checkbox">
+        <input type="file">
+
+    </select>
+
+
+    <table border="1"> 
+
+        <tr>
+
+            <th>sr</th>
+            <th>name</th>
+            <th>roll number</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+        </tr>
+    </table>
+
+
+    <table border="5">
+
+        <tr>
+            <th rowspan="2">SUB CODE</th>
+            <th rowspan="2">SUBJECT</th>
+            <th colspan="4">MARKS OBTAINED</th>
+            <th rowspan="2"> POSITIONAL GRADE</th>
+            </tr>
+        
+
+        
+            <th>Theory</th>
+            <th>Praticle</th>
+            <th>total</th>
+            <th>Total i n word</th>
+        
+        </tr>
+        <td>002</td>
+        <td>hindi cource-a</td>
+        <td>062</td>
+        <td>020</td>
+        <td>082</td>
+        <td>eighty two</td>
+        <td>B1</td>
+
+        <tr>
+
+            <td>184</td>
+            <td>English Lang</td>
+            <td>051</td>
+            <td>020</td>
+            <td>072</td>
+            <td>seventy one</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>041</td>
+            <td>Mathematics stander</td>
+            <td>020</td>
+            <td>098</td>
+            <td>082</td>
+            <td>eight eight</td>
+            <td>A2</td>
+        </tr>
+        <tr>
+            <td>066</td>
+            <td>Science theory</td>
+            <td>068</td>
+            <td>020</td>
+            <td>088</td>
+            <td>eighty one</td>
+            <td>A1</td>
+        </tr>
+        <tr>
+            <td>067</td>
+            <td>Social science</td>
+            <td>069</td>
+            <td>020</td>
+            <td>089</td>
+            <td>Eighty eight</td>
+            <td>A2</td>
+        </tr>
+
+    </table>
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eK0IIyBlYew?si=Pcj9upvOZJoxnJPL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aXhDkAhgoCM?si=oLpbTyuVCp7pfdOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <pre>
+        #include <stdio.h>
+
+            int main() {
+                int choice;
+                float num1, num2, result;
+            
+                printf("calculator program\n");
+            printf("1. addition\n");
+            printf("2. subtraction\n");
+            printf("3. multiplication\n");
+            printf("4. division\n");
+            printf("5. exit\n");
+                while (1) {
+                    printf("Enter your choice: ");
+                    scanf("%d", &choice);
+            
+                    if (choice == 5) {
+                        break;
+                    }
+            
+                    printf("Enter first number: ");
+                  scanf("%f", &num1);
+            
+                     printf("Enter second number: ");
+                    scanf("%f", &num2);
+                       
+                       switch (choice) {
+                        case 1:
+                            result = num1 + num2;
+                            printf("%.2f + %.2f = %.2f\n", num1, num2, result);
+                            break;
+                        case 2:
+                            result = num1 - num2;
+                            printf("%.2f - %.2f = %.2f\n", num1, num2, result);
+                            break;
+                        case 3:
+                            result = num1 * num2;
+                            printf("%.2f * %.2f = %.2f\n", num1, num2, result);
+                            break;
+                        case 4:
+                            if (num2 != 0) {
+                                result = num1 / num2;
+                                printf("%.2f / %.2f = %.2f\n", num1, num2, result);
+                            } else {
+                                printf("Error: Division by zero!\n");
+                            }
+                            break;
+                        default:
+                            printf("Invalid choice!\n");
+                    }
+                }
+                return 0;
+            }
+            
+    </pre>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.3451253738995!2d77.22689321710487!3d28.61292793858764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d0b%3A0x717971125923e5d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1732612880847!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body> 
+</html>
